@@ -1,0 +1,4 @@
+interface:
+  display_name: "B2B 外贸网站选型与 SEO"
+  short_description: "实访现有站与竞品诊断，或从零访谈选型，交付配套工具、CDN 规则与 SEO 方案"
+  default_prompt: "使用 $b2b-website-strategy：有现有站就实访诊断并对标竞品；从零建站就先问几个业务问题。交付技术选型、配套工具、明确的 CDN 接入与缓存规则，以及 SEO 方案。"

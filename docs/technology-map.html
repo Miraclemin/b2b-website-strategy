@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="外贸网站技术选型二叉知识树：8 个选型层面、32 组知识点，包含类比、外贸例子与选型要点。"><title>外贸网站技术选型图 · 8 层 32 组知识点</title>
+<style>
+:root{--ink:#183139;--muted:#546c73;--teal:#176d64;--blue:#375f96;--line:#d5dfd8;--bg:#f5f7f3}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}a{color:var(--teal);text-underline-offset:4px}button,input{font:inherit}button{cursor:pointer;border:1px solid var(--line);border-radius:8px;background:white;color:var(--ink);padding:9px 14px}button:hover{border-color:var(--teal)}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #74b9a4;outline-offset:3px}.wrap{max-width:1280px;margin:auto;padding:0 32px}header{border-bottom:1px solid var(--line)}header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:17px;padding-bottom:17px}.brand{font-size:14px;font-weight:700;letter-spacing:.12em}header a{font-size:14px}.hero{padding:60px 0 30px;display:flex;justify-content:space-between;gap:30px}.eyebrow{color:var(--teal);font-size:13px;letter-spacing:.12em;font-weight:700}h1{font-size:clamp(30px,4.5vw,54px);letter-spacing:-.035em;line-height:1.25;margin:13px 0 20px}.hero p{max-width:760px;color:var(--muted);font-size:17px;margin:0}.counts{display:flex;gap:25px;align-items:flex-start;padding-top:25px;white-space:nowrap}.counts strong{font-size:44px;display:block;line-height:1.2}.counts span{font-size:13px;color:var(--muted)}.note{border-left:3px solid var(--teal);padding:12px 18px;background:#eaf1e9;margin:10px 0 25px;font-size:14px}.actions{display:flex;gap:12px;flex-wrap:wrap}.actions a{display:inline-block;border:1px solid var(--line);border-radius:8px;padding:8px 15px;background:white;text-decoration:none;font-size:14px}.actions .primary{color:white;background:var(--teal);border-color:var(--teal)}h2{font-size:27px;line-height:1.4;margin:40px 0 10px}.hint{font-size:14px;color:var(--muted);margin:0 0 15px}.tree-top{display:flex;align-items:center;justify-content:space-between;gap:15px}.zoom-controls{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.zoom-controls button{font-size:13px;padding:5px 11px}.zoom-controls output{min-width:42px;text-align:center;font-size:13px}.canvas{border:1px solid var(--line);border-radius:12px;overflow:auto;background:white;max-height:850px;overscroll-behavior:contain}.canvas svg{display:block;max-width:none;height:auto}.canvas a:hover rect{stroke:var(--teal);stroke-width:3}.toolbar{position:sticky;top:0;z-index:3;display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--bg);border-bottom:1px solid var(--line);padding:16px 0;margin-top:10px}.toolbar input{flex:1;min-width:180px;border:1px solid var(--line);border-radius:8px;padding:10px 14px;background:white;color:var(--ink)}.toolbar button{font-size:13px}.toolbar output{color:var(--muted);font-size:13px;min-width:85px}.module-nav{display:flex;gap:7px;flex-wrap:wrap;padding:20px 0}.module-nav a{font-size:13px;text-decoration:none;border-bottom:1px solid var(--line);padding:3px 8px}.module{scroll-margin-top:100px;margin:10px 0 32px}.module h3{font-size:23px;margin:0 0 17px;color:var(--teal)}.pair{margin-bottom:16px}.pair h4{font-size:14px;font-weight:500;color:var(--muted);margin:0 0 8px}.pair-body{display:grid;grid-template-columns:1fr 1fr;gap:14px}.point{border:1px solid var(--line);border-radius:10px;background:white;scroll-margin-top:100px;align-self:start}.point summary{display:flex;gap:11px;align-items:flex-start;padding:18px;cursor:pointer;list-style:none;font-size:16px;font-weight:600;line-height:1.55}.point summary::after{content:'＋';margin-left:auto;color:var(--muted);flex-shrink:0}.point[open] summary::after{content:'−'}.point[open]{border-color:#8eafa0}.point:target{outline:2px solid var(--teal);outline-offset:2px}.point-no{font:12px/24px ui-monospace,monospace;color:var(--teal);flex-shrink:0}.point-body{padding:0 20px 20px}dl{margin:0}dt{font-size:12px;letter-spacing:.08em;color:var(--teal);font-weight:700;margin-top:12px}dd{margin:4px 0 0;font-size:14px;overflow-wrap:anywhere}.source{display:inline-block;margin-top:15px;font-size:13px}.empty{display:none;padding:30px;border:1px dashed var(--line);color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0 42px;color:var(--muted);font-size:13px;margin-top:35px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}@media(max-width:700px){.wrap{padding:0 18px}.hero{padding-top:32px;display:block}.hero p{font-size:15px}.counts{padding-top:20px;gap:28px}.counts strong{font-size:32px}.pair-body{grid-template-columns:1fr}.tree-top{display:block}.zoom-controls{margin:10px 0}.canvas{max-height:550px}.toolbar{gap:7px}.toolbar input{flex-basis:100%}.toolbar button{padding:8px 10px}header .wrap{padding-top:12px;padding-bottom:12px}.brand{font-size:11px;letter-spacing:.05em}h2{font-size:24px}.point summary{font-size:15px;padding:15px}.module-nav{gap:4px}.module-nav a{font-size:12px}footer{overflow-wrap:anywhere}}@media print{header,.actions,.toolbar,.zoom-controls,.module-nav,.source,footer{display:none}.canvas{max-height:none;overflow:visible;border:0}.canvas svg{width:100%!important}.pair-body{grid-template-columns:1fr}.point{break-inside:avoid}.hero{padding-top:0}.counts{display:none}body{background:white}.wrap{padding:0}h2{break-before:page}.point-body{display:block}}
+</style></head><body>
+<header><div class="wrap"><span class="brand">B2B WEBSITE STRATEGY</span><a href="https://github.com/Miraclemin/b2b-website-strategy" target="_blank" rel="noopener noreferrer">获取 Skill ↗</a></div></header>
+<main class="wrap"><section class="hero"><div><div class="eyebrow">业务 → 技术 → 询盘 → 持续运营</div><h1>先看业务，<br>再选网站技术。</h1><p>外贸网站技术选型二叉知识树。点击知识点，学习它是什么、像什么、怎么用，以及什么时候值得选。</p></div><div class="counts"><div><strong>08</strong><span>选型层面</span></div><div><strong>32</strong><span>知识点组</span></div></div></section>
+<div class="note"><strong>怎么理解“8 层”？</strong>指 8 个业务选型层面。图采用二叉分组，共 63 个节点、32 个末端知识点组；从根到叶有 5 次分叉。分支是知识分类，实际建站可以组合使用，不能机械地沿一条路二选一。</div>
+<nav class="actions" aria-label="主要操作"><a class="primary" href="#knowledge">逐点学习 ↓</a><a href="../assets/technology-map.svg" download>下载完整 SVG</a><a href="../assets/technology-map.png" download>下载高清 PNG</a><a href="https://github.com/Miraclemin/b2b-website-strategy#快速开始" target="_blank" rel="noopener noreferrer">安装与用法 ↗</a></nav>
+<section aria-labelledby="map-heading"><div class="tree-top"><h2 id="map-heading">完整二叉知识树</h2><div class="zoom-controls"><button id="zoom-out" aria-label="缩小知识树">−</button><output id="zoom-label">100%</output><button id="zoom-in" aria-label="放大知识树">＋</button><button id="fit">适应宽度</button><button id="actual">原尺寸</button></div></div><p class="hint">在图内横向 / 纵向滚动；点击末端知识点即可跳到详细解释。手机上建议直接使用下方“逐点学习”。</p><div class="canvas" id="canvas" tabindex="0" aria-label="可滚动和缩放的二叉知识树"><svg xmlns="http://www.w3.org/2000/svg" width="1900" height="2580" viewBox="0 0 1900 2580" role="img" aria-labelledby="tree-title tree-desc">
+<title id="tree-title">外贸网站技术选型 · 完整二叉知识树</title><desc id="tree-desc">8 个选型层面，32 组知识点，63 个节点；每个非叶节点恰有两个子节点。</desc>
+<rect width="1900" height="2580" fill="#f5f7f3"/>
+<g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" fill="#183139">
+<text x="52" y="68" font-size="42" fill="#183139" font-weight="700">外贸网站技术选型</text>
+<text x="52" y="110" font-size="25" fill="#176d64" font-weight="600">8 个选型层面 · 32 组知识点 · 每个分支二分</text>
+<text x="52" y="150" font-size="21" fill="#546c73" font-weight="400">这是知识分类图。一个项目会组合多个分支；具体技术选择请结合业务、预算与维护条件。</text>
+<path d="M265 1336.0 H284.5 V760.0 H304" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M529 760.0 H548.5 V472.0 H568" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 472.0 H813.0 V328.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 328.0 H1081.5 V256.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 256.0 H1360.0 V220 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 256.0 H1360.0 V292 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 328.0 H1081.5 V400.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 400.0 H1360.0 V364 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 400.0 H1360.0 V436 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 472.0 H813.0 V616.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 616.0 H1081.5 V544.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 544.0 H1360.0 V508 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 544.0 H1360.0 V580 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 616.0 H1081.5 V688.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 688.0 H1360.0 V652 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 688.0 H1360.0 V724 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M529 760.0 H548.5 V1048.0 H568" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 1048.0 H813.0 V904.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 904.0 H1081.5 V832.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 832.0 H1360.0 V796 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 832.0 H1360.0 V868 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 904.0 H1081.5 V976.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 976.0 H1360.0 V940 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 976.0 H1360.0 V1012 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 1048.0 H813.0 V1192.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1192.0 H1081.5 V1120.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1120.0 H1360.0 V1084 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1120.0 H1360.0 V1156 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1192.0 H1081.5 V1264.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1264.0 H1360.0 V1228 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1264.0 H1360.0 V1300 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M265 1336.0 H284.5 V1912.0 H304" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M529 1912.0 H548.5 V1624.0 H568" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 1624.0 H813.0 V1480.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1480.0 H1081.5 V1408.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1408.0 H1360.0 V1372 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1408.0 H1360.0 V1444 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1480.0 H1081.5 V1552.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1552.0 H1360.0 V1516 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1552.0 H1360.0 V1588 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 1624.0 H813.0 V1768.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1768.0 H1081.5 V1696.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1696.0 H1360.0 V1660 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1696.0 H1360.0 V1732 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 1768.0 H1081.5 V1840.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1840.0 H1360.0 V1804 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1840.0 H1360.0 V1876 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M529 1912.0 H548.5 V2200.0 H568" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 2200.0 H813.0 V2056.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 2056.0 H1081.5 V1984.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1984.0 H1360.0 V1948 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 1984.0 H1360.0 V2020 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 2056.0 H1081.5 V2128.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2128.0 H1360.0 V2092 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2128.0 H1360.0 V2164 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M793 2200.0 H813.0 V2344.0 H833" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 2344.0 H1081.5 V2272.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2272.0 H1360.0 V2236 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2272.0 H1360.0 V2308 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1063 2344.0 H1081.5 V2416.0 H1100" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2416.0 H1360.0 V2380 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<path d="M1340 2416.0 H1360.0 V2452 H1380" fill="none" stroke="#b6c7c6" stroke-width="2"/>
+<g data-target="#knowledge" data-node="n00"><title>B2B 外贸网站技术选型</title><rect x="45" y="1300.0" width="220" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="60" y="1329.5" font-size="22" fill="#183139" font-weight="600">B2B 外贸网站技术</text>
+<text x="60" y="1356.5" font-size="22" fill="#183139" font-weight="600">选型</text>
+</g>
+<g data-target="#knowledge" data-node="n01"><title>A · 网站怎么建</title><rect x="304" y="733.0" width="225" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="319" y="767.0" font-size="22" fill="#183139" font-weight="400">A · 网站怎么建</text>
+</g>
+<g data-target="#knowledge" data-node="n02"><title>A1 · 业务与内容</title><rect x="568" y="445.0" width="225" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="583" y="479.0" font-size="22" fill="#183139" font-weight="400">A1 · 业务与内容</text>
+</g>
+<g data-target="#module-1" data-node="n03"><title>01 · 业务目标与建站路线</title><rect x="833" y="292.0" width="230" height="72" rx="9" fill="#ffffff" stroke="#176d64" stroke-width="2"/>
+<text x="848" y="321.5" font-size="22" fill="#176d64" font-weight="600">01 · 业务目标与建</text>
+<text x="848" y="348.5" font-size="22" fill="#176d64" font-weight="600">站路线</text>
+</g>
+<g data-target="#knowledge" data-node="n04"><title>先确定经营方式</title><rect x="1100" y="229.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="263.0" font-size="22" fill="#183139" font-weight="400">先确定经营方式</text>
+</g>
+<g data-target="#point-01" data-node="n05"><title>询盘型 · RFQ</title><rect x="1380" y="193.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="203.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="227.0" font-size="20" fill="#183139" font-weight="400">01  询盘型 · RFQ</text>
+</g>
+<g data-target="#point-02" data-node="n06"><title>交易型 · B2B 电商</title><rect x="1380" y="265.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="275.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="299.0" font-size="20" fill="#183139" font-weight="400">02  交易型 · B2B 电商</text>
+</g>
+<g data-target="#knowledge" data-node="n07"><title>再确定建设方式</title><rect x="1100" y="373.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="407.0" font-size="22" fill="#183139" font-weight="400">再确定建设方式</text>
+</g>
+<g data-target="#point-03" data-node="n08"><title>现成系统 · CMS / SaaS</title><rect x="1380" y="337.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="347.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="371.0" font-size="20" fill="#183139" font-weight="400">03  现成系统 · CMS / SaaS</text>
+</g>
+<g data-target="#point-04" data-node="n09"><title>框架开发 · 一体 / Headless</title><rect x="1380" y="409.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="419.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="443.0" font-size="20" fill="#183139" font-weight="400">04  框架开发 · 一体 / Headless</text>
+</g>
+<g data-target="#module-2" data-node="n10"><title>02 · 内容与数据</title><rect x="833" y="589.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#375f96" stroke-width="2"/>
+<text x="848" y="623.0" font-size="22" fill="#375f96" font-weight="600">02 · 内容与数据</text>
+</g>
+<g data-target="#knowledge" data-node="n11"><title>内容怎么组织</title><rect x="1100" y="517.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="551.0" font-size="22" fill="#183139" font-weight="400">内容怎么组织</text>
+</g>
+<g data-target="#point-05" data-node="n12"><title>内容模型 · 产品 / 分类 / 应用</title><rect x="1380" y="481.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="491.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="515.0" font-size="20" fill="#183139" font-weight="400">05  内容模型 · 产品 / 分类 / 应用</text>
+</g>
+<g data-target="#point-06" data-node="n13"><title>CMS · 编辑 / 审核 / 发布</title><rect x="1380" y="553.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="563.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="587.0" font-size="20" fill="#183139" font-weight="400">06  CMS · 编辑 / 审核 / 发布</text>
+</g>
+<g data-target="#knowledge" data-node="n14"><title>数据怎么保存与交换</title><rect x="1100" y="661.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="695.0" font-size="22" fill="#183139" font-weight="400">数据怎么保存与交换</text>
+</g>
+<g data-target="#point-07" data-node="n15"><title>数据库 / 文件存储 / 搜索</title><rect x="1380" y="625.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="635.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="659.0" font-size="20" fill="#183139" font-weight="400">07  数据库 / 文件存储 / 搜索</text>
+</g>
+<g data-target="#point-08" data-node="n16"><title>API / Webhook / 外部集成</title><rect x="1380" y="697.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="707.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="731.0" font-size="20" fill="#183139" font-weight="400">08  API / Webhook / 外部集成</text>
+</g>
+<g data-target="#knowledge" data-node="n17"><title>A2 · 页面与渲染</title><rect x="568" y="1021.0" width="225" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="583" y="1055.0" font-size="22" fill="#183139" font-weight="400">A2 · 页面与渲染</text>
+</g>
+<g data-target="#module-3" data-node="n18"><title>03 · 前端与交互</title><rect x="833" y="877.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#176d64" stroke-width="2"/>
+<text x="848" y="911.0" font-size="22" fill="#176d64" font-weight="600">03 · 前端与交互</text>
+</g>
+<g data-target="#knowledge" data-node="n19"><title>页面基础</title><rect x="1100" y="805.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="839.0" font-size="22" fill="#183139" font-weight="400">页面基础</text>
+</g>
+<g data-target="#point-09" data-node="n20"><title>HTML / CSS / JavaScript</title><rect x="1380" y="769.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="779.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="803.0" font-size="20" fill="#183139" font-weight="400">09  HTML / CSS / JavaScript</text>
+</g>
+<g data-target="#point-10" data-node="n21"><title>响应式 / 可访问性 / 业务交互</title><rect x="1380" y="841.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="851.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="875.0" font-size="20" fill="#183139" font-weight="400">10  响应式 / 可访问性 / 业务交互</text>
+</g>
+<g data-target="#knowledge" data-node="n22"><title>开发工具</title><rect x="1100" y="949.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="983.0" font-size="22" fill="#183139" font-weight="400">开发工具</text>
+</g>
+<g data-target="#point-11" data-node="n23"><title>组件与样式工具 · React / Vue 等</title><rect x="1380" y="913.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="923.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="947.0" font-size="20" fill="#183139" font-weight="400">11  组件与样式工具 · React / Vue 等</text>
+</g>
+<g data-target="#point-12" data-node="n24"><title>网站框架 · Next.js / Nuxt / Astro</title><rect x="1380" y="985.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="995.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1019.0" font-size="20" fill="#183139" font-weight="400">12  网站框架 · Next.js / Nuxt / Astro</text>
+</g>
+<g data-target="#module-4" data-node="n25"><title>04 · 页面渲染方式</title><rect x="833" y="1165.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#375f96" stroke-width="2"/>
+<text x="848" y="1199.0" font-size="22" fill="#375f96" font-weight="600">04 · 页面渲染方式</text>
+</g>
+<g data-target="#knowledge" data-node="n26"><title>先生成可复用页面</title><rect x="1100" y="1093.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1127.0" font-size="22" fill="#183139" font-weight="400">先生成可复用页面</text>
+</g>
+<g data-target="#point-13" data-node="n27"><title>SSG · 静态站点生成</title><rect x="1380" y="1057.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1067.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1091.0" font-size="20" fill="#183139" font-weight="400">13  SSG · 静态站点生成</text>
+</g>
+<g data-target="#point-14" data-node="n28"><title>ISR · 增量静态再生</title><rect x="1380" y="1129.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1139.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1163.0" font-size="20" fill="#183139" font-weight="400">14  ISR · 增量静态再生</text>
+</g>
+<g data-target="#knowledge" data-node="n29"><title>访问过程中生成内容</title><rect x="1100" y="1237.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1271.0" font-size="22" fill="#183139" font-weight="400">访问过程中生成内容</text>
+</g>
+<g data-target="#point-15" data-node="n30"><title>SSR · 服务端渲染</title><rect x="1380" y="1201.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1211.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1235.0" font-size="20" fill="#183139" font-weight="400">15  SSR · 服务端渲染</text>
+</g>
+<g data-target="#point-16" data-node="n31"><title>CSR · 客户端渲染</title><rect x="1380" y="1273.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1283.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1307.0" font-size="20" fill="#183139" font-weight="400">16  CSR · 客户端渲染</text>
+</g>
+<g data-target="#knowledge" data-node="n32"><title>B · 网站怎么运行与获客</title><rect x="304" y="1876.0" width="225" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="319" y="1905.5" font-size="22" fill="#183139" font-weight="400">B · 网站怎么运行</text>
+<text x="319" y="1932.5" font-size="22" fill="#183139" font-weight="400">与获客</text>
+</g>
+<g data-target="#knowledge" data-node="n33"><title>B1 · 全球访问与搜索</title><rect x="568" y="1588.0" width="225" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="583" y="1617.5" font-size="22" fill="#183139" font-weight="400">B1 · 全球访问与搜</text>
+<text x="583" y="1644.5" font-size="22" fill="#183139" font-weight="400">索</text>
+</g>
+<g data-target="#module-5" data-node="n34"><title>05 · 部署与加速</title><rect x="833" y="1453.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#176d64" stroke-width="2"/>
+<text x="848" y="1487.0" font-size="22" fill="#176d64" font-weight="600">05 · 部署与加速</text>
+</g>
+<g data-target="#knowledge" data-node="n35"><title>让网站能访问</title><rect x="1100" y="1381.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1415.0" font-size="22" fill="#183139" font-weight="400">让网站能访问</text>
+</g>
+<g data-target="#point-17" data-node="n36"><title>域名 / DNS / HTTPS</title><rect x="1380" y="1345.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1355.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1379.0" font-size="20" fill="#183139" font-weight="400">17  域名 / DNS / HTTPS</text>
+</g>
+<g data-target="#point-18" data-node="n37"><title>托管 / 服务器 / Serverless</title><rect x="1380" y="1417.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1427.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1451.0" font-size="20" fill="#183139" font-weight="400">18  托管 / 服务器 / Serverless</text>
+</g>
+<g data-target="#knowledge" data-node="n38"><title>让海外访问更快</title><rect x="1100" y="1525.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1559.0" font-size="22" fill="#183139" font-weight="400">让海外访问更快</text>
+</g>
+<g data-target="#point-19" data-node="n39"><title>CDN / 缓存 / 更新失效</title><rect x="1380" y="1489.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1499.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1523.0" font-size="20" fill="#183139" font-weight="400">19  CDN / 缓存 / 更新失效</text>
+</g>
+<g data-target="#point-20" data-node="n40"><title>图片 / 脚本 / 字体 / 体验性能</title><rect x="1380" y="1561.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1571.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1595.0" font-size="20" fill="#183139" font-weight="400">20  图片 / 脚本 / 字体 / 体验性能</text>
+</g>
+<g data-target="#module-6" data-node="n41"><title>06 · SEO 与多语言</title><rect x="833" y="1732.0" width="230" height="72" rx="9" fill="#ffffff" stroke="#375f96" stroke-width="2"/>
+<text x="848" y="1761.5" font-size="22" fill="#375f96" font-weight="600">06 · SEO 与多语</text>
+<text x="848" y="1788.5" font-size="22" fill="#375f96" font-weight="600">言</text>
+</g>
+<g data-target="#knowledge" data-node="n42"><title>让搜索引擎理解网站</title><rect x="1100" y="1669.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1703.0" font-size="22" fill="#183139" font-weight="400">让搜索引擎理解网站</text>
+</g>
+<g data-target="#point-21" data-node="n43"><title>抓取 / 索引 / URL 管理</title><rect x="1380" y="1633.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1643.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1667.0" font-size="20" fill="#183139" font-weight="400">21  抓取 / 索引 / URL 管理</text>
+</g>
+<g data-target="#point-22" data-node="n44"><title>页面 SEO / 结构化数据 / 内容</title><rect x="1380" y="1705.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1715.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1739.0" font-size="20" fill="#183139" font-weight="400">22  页面 SEO / 结构化数据 / 内容</text>
+</g>
+<g data-target="#knowledge" data-node="n45"><title>让不同市场找到正确版本</title><rect x="1100" y="1804.0" width="240" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1833.5" font-size="22" fill="#183139" font-weight="400">让不同市场找到正确</text>
+<text x="1115" y="1860.5" font-size="22" fill="#183139" font-weight="400">版本</text>
+</g>
+<g data-target="#point-23" data-node="n46"><title>国际化 i18n / 翻译 / hreflang</title><rect x="1380" y="1777.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1787.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1811.0" font-size="20" fill="#183139" font-weight="400">23  国际化 i18n / 翻译 / hreflang</text>
+</g>
+<g data-target="#point-24" data-node="n47"><title>单站 / 多站 / 站群治理</title><rect x="1380" y="1849.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1859.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="1883.0" font-size="20" fill="#183139" font-weight="400">24  单站 / 多站 / 站群治理</text>
+</g>
+<g data-target="#knowledge" data-node="n48"><title>B2 · 询盘转化与持续维护</title><rect x="568" y="2164.0" width="225" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="583" y="2193.5" font-size="22" fill="#183139" font-weight="400">B2 · 询盘转化与持</text>
+<text x="583" y="2220.5" font-size="22" fill="#183139" font-weight="400">续维护</text>
+</g>
+<g data-target="#module-7" data-node="n49"><title>07 · 询盘与增长</title><rect x="833" y="2029.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#176d64" stroke-width="2"/>
+<text x="848" y="2063.0" font-size="22" fill="#176d64" font-weight="600">07 · 询盘与增长</text>
+</g>
+<g data-target="#knowledge" data-node="n50"><title>接住并跟进需求</title><rect x="1100" y="1957.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="1991.0" font-size="22" fill="#183139" font-weight="400">接住并跟进需求</text>
+</g>
+<g data-target="#point-25" data-node="n51"><title>RFQ 表单 / 邮箱 / 即时沟通</title><rect x="1380" y="1921.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="1931.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="1955.0" font-size="20" fill="#183139" font-weight="400">25  RFQ 表单 / 邮箱 / 即时沟通</text>
+</g>
+<g data-target="#point-26" data-node="n52"><title>CRM / 线索分配 / 自动化</title><rect x="1380" y="1993.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2003.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="2027.0" font-size="20" fill="#183139" font-weight="400">26  CRM / 线索分配 / 自动化</text>
+</g>
+<g data-target="#knowledge" data-node="n53"><title>看清流量是否带来生意</title><rect x="1100" y="2092.0" width="240" height="72" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="2121.5" font-size="22" fill="#183139" font-weight="400">看清流量是否带来生</text>
+<text x="1115" y="2148.5" font-size="22" fill="#183139" font-weight="400">意</text>
+</g>
+<g data-target="#point-27" data-node="n54"><title>分析工具 / 广告事件 / UTM</title><rect x="1380" y="2065.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2075.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="2099.0" font-size="20" fill="#183139" font-weight="400">27  分析工具 / 广告事件 / UTM</text>
+</g>
+<g data-target="#point-28" data-node="n55"><title>线索质量 / 归因 / 转化优化</title><rect x="1380" y="2137.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2147.0" width="4" height="34" rx="2" fill="#176d64"/>
+<text x="1395" y="2171.0" font-size="20" fill="#183139" font-weight="400">28  线索质量 / 归因 / 转化优化</text>
+</g>
+<g data-target="#module-8" data-node="n56"><title>08 · 安全与维护</title><rect x="833" y="2317.0" width="230" height="54" rx="9" fill="#ffffff" stroke="#375f96" stroke-width="2"/>
+<text x="848" y="2351.0" font-size="22" fill="#375f96" font-weight="600">08 · 安全与维护</text>
+</g>
+<g data-target="#knowledge" data-node="n57"><title>保护系统与客户数据</title><rect x="1100" y="2245.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="2279.0" font-size="22" fill="#183139" font-weight="400">保护系统与客户数据</text>
+</g>
+<g data-target="#point-29" data-node="n58"><title>认证 / 授权 / 密钥 / 隐私</title><rect x="1380" y="2209.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2219.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="2243.0" font-size="20" fill="#183139" font-weight="400">29  认证 / 授权 / 密钥 / 隐私</text>
+</g>
+<g data-target="#point-30" data-node="n59"><title>防垃圾 / 输入校验 / 应用安全</title><rect x="1380" y="2281.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2291.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="2315.0" font-size="20" fill="#183139" font-weight="400">30  防垃圾 / 输入校验 / 应用安全</text>
+</g>
+<g data-target="#knowledge" data-node="n60"><title>保持可交付与可恢复</title><rect x="1100" y="2389.0" width="240" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<text x="1115" y="2423.0" font-size="22" fill="#183139" font-weight="400">保持可交付与可恢复</text>
+</g>
+<g data-target="#point-31" data-node="n61"><title>Git / 测试环境 / CI/CD / 回滚</title><rect x="1380" y="2353.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2363.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="2387.0" font-size="20" fill="#183139" font-weight="400">31  Git / 测试环境 / CI/CD / 回滚</text>
+</g>
+<g data-target="#point-32" data-node="n62"><title>备份 / 监控 / 所有权 / 总成本</title><rect x="1380" y="2425.0" width="470" height="54" rx="9" fill="#ffffff" stroke="#cedbd6" stroke-width="1"/>
+<rect x="1380" y="2435.0" width="4" height="34" rx="2" fill="#375f96"/>
+<text x="1395" y="2459.0" font-size="20" fill="#183139" font-weight="400">32  备份 / 监控 / 所有权 / 总成本</text>
+</g>
+<text x="52" y="2517" font-size="22" fill="#546c73" font-weight="400">阅读方法：先看 01—08 模块，再沿分支学习；SSR / SSG / ISR / CSR 可以按页面组合。</text>
+<text x="52" y="2554" font-size="20" fill="#176d64" font-weight="400">b2b-website-strategy  /  学习图 + 已有站诊断 + 新站访谈选型</text>
+</g></svg></div></section>
+<section id="knowledge"><h2>逐点学习</h2><p class="hint">每个模块包含 4 组知识点；搜索支持 SSR、WordPress、邮箱、CDN 等名称和说明内容。</p><div class="toolbar"><label class="sr-only" for="search">搜索知识点</label><input type="search" id="search" placeholder="搜索知识点、术语或业务场景…" autocomplete="off"><output id="match-count" aria-live="polite">32 / 32 组</output><button id="expand">展开当前结果</button><button id="collapse">收起解释</button><button id="print">打印 / 保存 PDF</button></div><nav class="module-nav" aria-label="八个选型模块"><a href="#module-1">01 · 业务目标与建站路线</a><a href="#module-2">02 · 内容与数据</a><a href="#module-3">03 · 前端与交互</a><a href="#module-4">04 · 页面渲染方式</a><a href="#module-5">05 · 部署与加速</a><a href="#module-6">06 · SEO 与多语言</a><a href="#module-7">07 · 询盘与增长</a><a href="#module-8">08 · 安全与维护</a></nav><div class="empty" id="empty" role="status">没有找到匹配内容，试试“缓存”“产品”或“邮件”。</div><section class="module" id="module-1"><h3>01 · 业务目标与建站路线</h3>
+<div class="pair"><h4>先确定经营方式</h4><div class="pair-body">
+<details class="point" id="point-01" data-search="询盘型 · RFQ RFQ 是报价请求。买家提交需求，销售沟通后报价，不必在网站直接付款。 网站像展厅，成交由业务员接着谈。 定制家具：买家提交款式、数量、尺寸、目的港。 重点是产品资料、案例、询盘和销售跟进；是否显示价格由业务决定。"><summary><span class="point-no">01</span>询盘型 · RFQ</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>RFQ 是报价请求。买家提交需求，销售沟通后报价，不必在网站直接付款。</dd>
+<dt>打个比方</dt><dd>网站像展厅，成交由业务员接着谈。</dd>
+<dt>外贸例子</dt><dd>定制家具：买家提交款式、数量、尺寸、目的港。</dd>
+<dt>选型要点</dt><dd>重点是产品资料、案例、询盘和销售跟进；是否显示价格由业务决定。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-02" data-search="交易型 · B2B 电商 网站处理客户账户、合同价、最小起订量、下单，以及可能的在线支付或账期。 网站除了展厅，还承担收银台和订货员。 老客户登录后按协议价补货。 先核对客户分级、MOQ、阶梯价、税费、运费、账期与 ERP 同步；不是装上购物车就完成了 B2B。"><summary><span class="point-no">02</span>交易型 · B2B 电商</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>网站处理客户账户、合同价、最小起订量、下单，以及可能的在线支付或账期。</dd>
+<dt>打个比方</dt><dd>网站除了展厅，还承担收银台和订货员。</dd>
+<dt>外贸例子</dt><dd>老客户登录后按协议价补货。</dd>
+<dt>选型要点</dt><dd>先核对客户分级、MOQ、阶梯价、税费、运费、账期与 ERP 同步；不是装上购物车就完成了 B2B。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>再确定建设方式</h4><div class="pair-body">
+<details class="point" id="point-03" data-search="现成系统 · CMS / SaaS CMS 是内容管理系统；SaaS 是由服务商托管的软件。两者可以重叠。WordPress 可自行托管，Webflow、Shopify 是托管平台例子。 选择一套现成店铺设施，再装修。 WordPress 管产品与文章；托管平台提供后台与发布服务。 比较编辑体验、扩展能力、数据导出、费用和维护责任。具体功能与套餐应核对当前官方说明。"><summary><span class="point-no">03</span>现成系统 · CMS / SaaS</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>CMS 是内容管理系统；SaaS 是由服务商托管的软件。两者可以重叠。WordPress 可自行托管，Webflow、Shopify 是托管平台例子。</dd>
+<dt>打个比方</dt><dd>选择一套现成店铺设施，再装修。</dd>
+<dt>外贸例子</dt><dd>WordPress 管产品与文章；托管平台提供后台与发布服务。</dd>
+<dt>选型要点</dt><dd>比较编辑体验、扩展能力、数据导出、费用和维护责任。具体功能与套餐应核对当前官方说明。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-04" data-search="框架开发 · 一体 / Headless 开发框架帮助写网站。一体式把页面与服务放在同一应用；Headless 把内容后台和展示前台分开，通过 API 连接。 前台接待和后台仓库可以一体，也可以分开协作。 Next.js 前台 + WordPress 内容后台；或一个应用同时处理页面与询盘接口。 定制能力更强，但要承担开发维护。Headless 是架构，Next.js 是框架，不能当成同一层的二选一。"><summary><span class="point-no">04</span>框架开发 · 一体 / Headless</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>开发框架帮助写网站。一体式把页面与服务放在同一应用；Headless 把内容后台和展示前台分开，通过 API 连接。</dd>
+<dt>打个比方</dt><dd>前台接待和后台仓库可以一体，也可以分开协作。</dd>
+<dt>外贸例子</dt><dd>Next.js 前台 + WordPress 内容后台；或一个应用同时处理页面与询盘接口。</dd>
+<dt>选型要点</dt><dd>定制能力更强，但要承担开发维护。Headless 是架构，Next.js 是框架，不能当成同一层的二选一。</dd>
+</dl>
+<a class="source" href="https://developer.wordpress.org/rest-api/" target="_blank" rel="noopener noreferrer">官方资料：WordPress REST API ↗</a>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-2"><h3>02 · 内容与数据</h3>
+<div class="pair"><h4>内容怎么组织</h4><div class="pair-body">
+<details class="point" id="point-05" data-search="内容模型 · 产品 / 分类 / 应用 先定义内容种类、字段及关系：产品有哪些参数，属于什么分类，可用于哪些行业。PIM 是更专门的产品信息管理系统。 先做统一产品资料卡，再批量填内容。 椅子有材质、尺寸、承重、MOQ；产品关联酒店应用和项目案例。 字段是否结构化，决定能否筛选、比较、多语言复用和批量导入。避免把所有参数塞进一段正文。"><summary><span class="point-no">05</span>内容模型 · 产品 / 分类 / 应用</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>先定义内容种类、字段及关系：产品有哪些参数，属于什么分类，可用于哪些行业。PIM 是更专门的产品信息管理系统。</dd>
+<dt>打个比方</dt><dd>先做统一产品资料卡，再批量填内容。</dd>
+<dt>外贸例子</dt><dd>椅子有材质、尺寸、承重、MOQ；产品关联酒店应用和项目案例。</dd>
+<dt>选型要点</dt><dd>字段是否结构化，决定能否筛选、比较、多语言复用和批量导入。避免把所有参数塞进一段正文。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-06" data-search="CMS · 编辑 / 审核 / 发布 让运营通过后台维护内容；可包括草稿、预览、审核、版本与翻译状态。少量内容也可放在 Markdown 文件。 给业务员一张能自己填写和提交的表。 运营改产品参数，审核通过后发布。 让真实编辑者试用；评估批量导入、权限、预览、媒体管理。开发者方便不等于运营好用。"><summary><span class="point-no">06</span>CMS · 编辑 / 审核 / 发布</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>让运营通过后台维护内容；可包括草稿、预览、审核、版本与翻译状态。少量内容也可放在 Markdown 文件。</dd>
+<dt>打个比方</dt><dd>给业务员一张能自己填写和提交的表。</dd>
+<dt>外贸例子</dt><dd>运营改产品参数，审核通过后发布。</dd>
+<dt>选型要点</dt><dd>让真实编辑者试用；评估批量导入、权限、预览、媒体管理。开发者方便不等于运营好用。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>数据怎么保存与交换</h4><div class="pair-body">
+<details class="point" id="point-07" data-search="数据库 / 文件存储 / 搜索 数据库存结构化记录；对象存储放图片、PDF、视频等文件；搜索服务负责检索与筛选。CMS 可能已包含其中一部分。 账本管记录，仓库放文件，目录帮你查找。 产品参数进数据库，说明书进对象存储，按材质和尺寸检索。 先看已有系统能否满足；数据量和检索需求增加后再引入独立搜索。并非每个网站都要另建数据库。"><summary><span class="point-no">07</span>数据库 / 文件存储 / 搜索</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>数据库存结构化记录；对象存储放图片、PDF、视频等文件；搜索服务负责检索与筛选。CMS 可能已包含其中一部分。</dd>
+<dt>打个比方</dt><dd>账本管记录，仓库放文件，目录帮你查找。</dd>
+<dt>外贸例子</dt><dd>产品参数进数据库，说明书进对象存储，按材质和尺寸检索。</dd>
+<dt>选型要点</dt><dd>先看已有系统能否满足；数据量和检索需求增加后再引入独立搜索。并非每个网站都要另建数据库。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-08" data-search="API / Webhook / 外部集成 API 是系统间读取或写入数据的接口；Webhook 是事件发生后主动通知另一个系统。 API 像打电话询问，Webhook 像事情办完主动通知。 ERP 同步库存；CMS 发布后通知前台刷新；询盘传入 CRM。 确认数据归谁管、同步方向、身份验证、失败重试和重复数据处理。API 密钥应留在受保护的服务端。"><summary><span class="point-no">08</span>API / Webhook / 外部集成</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>API 是系统间读取或写入数据的接口；Webhook 是事件发生后主动通知另一个系统。</dd>
+<dt>打个比方</dt><dd>API 像打电话询问，Webhook 像事情办完主动通知。</dd>
+<dt>外贸例子</dt><dd>ERP 同步库存；CMS 发布后通知前台刷新；询盘传入 CRM。</dd>
+<dt>选型要点</dt><dd>确认数据归谁管、同步方向、身份验证、失败重试和重复数据处理。API 密钥应留在受保护的服务端。</dd>
+</dl>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-3"><h3>03 · 前端与交互</h3>
+<div class="pair"><h4>页面基础</h4><div class="pair-body">
+<details class="point" id="point-09" data-search="HTML / CSS / JavaScript HTML 组织内容与结构，CSS 管外观与布局，JavaScript 管交互逻辑；TypeScript 在 JavaScript 上增加类型检查。 HTML 是骨架，CSS 是装修，JavaScript 让门窗能动。 产品标题与参数表用 HTML；手机布局用 CSS；询盘弹窗用 JavaScript。 这几项通常配合使用。TypeScript 不等于渲染方式，也不直接决定 SEO。"><summary><span class="point-no">09</span>HTML / CSS / JavaScript</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>HTML 组织内容与结构，CSS 管外观与布局，JavaScript 管交互逻辑；TypeScript 在 JavaScript 上增加类型检查。</dd>
+<dt>打个比方</dt><dd>HTML 是骨架，CSS 是装修，JavaScript 让门窗能动。</dd>
+<dt>外贸例子</dt><dd>产品标题与参数表用 HTML；手机布局用 CSS；询盘弹窗用 JavaScript。</dd>
+<dt>选型要点</dt><dd>这几项通常配合使用。TypeScript 不等于渲染方式，也不直接决定 SEO。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-10" data-search="响应式 / 可访问性 / 业务交互 响应式适配不同屏幕；可访问性让键盘、读屏等用户也能操作；业务交互包括筛选、比较、表单和选型。 同一个展厅，让手机访客和不同使用习惯的人都走得通。 手机可读规格表，键盘可填写询盘；按用途筛选产品。 先保证买家查资料和联系顺畅，再决定动画、3D、配置器等增强功能。"><summary><span class="point-no">10</span>响应式 / 可访问性 / 业务交互</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>响应式适配不同屏幕；可访问性让键盘、读屏等用户也能操作；业务交互包括筛选、比较、表单和选型。</dd>
+<dt>打个比方</dt><dd>同一个展厅，让手机访客和不同使用习惯的人都走得通。</dd>
+<dt>外贸例子</dt><dd>手机可读规格表，键盘可填写询盘；按用途筛选产品。</dd>
+<dt>选型要点</dt><dd>先保证买家查资料和联系顺畅，再决定动画、3D、配置器等增强功能。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>开发工具</h4><div class="pair-body">
+<details class="point" id="point-11" data-search="组件与样式工具 · React / Vue 等 组件是可重复使用的界面模块。React、Vue 帮助组织界面；组件库与 Tailwind 等样式工具帮助统一外观。 把导航、产品卡、按钮做成可重复拼装的积木。 修改一个产品卡组件，各分类页面一起更新。 React、Vue 通常是替代选择；组件库和样式工具可配合。它们不等于 CMS 或数据库。"><summary><span class="point-no">11</span>组件与样式工具 · React / Vue 等</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>组件是可重复使用的界面模块。React、Vue 帮助组织界面；组件库与 Tailwind 等样式工具帮助统一外观。</dd>
+<dt>打个比方</dt><dd>把导航、产品卡、按钮做成可重复拼装的积木。</dd>
+<dt>外贸例子</dt><dd>修改一个产品卡组件，各分类页面一起更新。</dd>
+<dt>选型要点</dt><dd>React、Vue 通常是替代选择；组件库和样式工具可配合。它们不等于 CMS 或数据库。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-12" data-search="网站框架 · Next.js / Nuxt / Astro 框架把路由、构建、数据读取、页面渲染等能力组织起来。Next.js 基于 React，Nuxt 基于 Vue，Astro 支持按需加入交互组件。 组件是积木，框架是帮你搭完整建筑的施工系统。 大量内容页面加少量筛选交互；或官网与客户门户共用一个工程。 按内容量、交互、团队能力和部署环境选。不是用了某个框架就自动快，也不是所有部署都支持同样功能。"><summary><span class="point-no">12</span>网站框架 · Next.js / Nuxt / Astro</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>框架把路由、构建、数据读取、页面渲染等能力组织起来。Next.js 基于 React，Nuxt 基于 Vue，Astro 支持按需加入交互组件。</dd>
+<dt>打个比方</dt><dd>组件是积木，框架是帮你搭完整建筑的施工系统。</dd>
+<dt>外贸例子</dt><dd>大量内容页面加少量筛选交互；或官网与客户门户共用一个工程。</dd>
+<dt>选型要点</dt><dd>按内容量、交互、团队能力和部署环境选。不是用了某个框架就自动快，也不是所有部署都支持同样功能。</dd>
+</dl>
+<a class="source" href="https://docs.astro.build/en/concepts/islands/" target="_blank" rel="noopener noreferrer">官方资料：Astro Islands ↗</a>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-4"><h3>04 · 页面渲染方式</h3>
+<div class="pair"><h4>先生成可复用页面</h4><div class="pair-body">
+<details class="point" id="point-13" data-search="SSG · 静态站点生成 在构建阶段生成页面，访问时交付已有 HTML；内容更新后可以再次构建。 提前印好产品册，客户来就直接拿。 公司介绍、文章、产品说明；改内容后触发重新构建。 适合可提前生成的公开内容。更新不频繁是常见情况，但不代表内容永远不能变。"><summary><span class="point-no">13</span>SSG · 静态站点生成</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>在构建阶段生成页面，访问时交付已有 HTML；内容更新后可以再次构建。</dd>
+<dt>打个比方</dt><dd>提前印好产品册，客户来就直接拿。</dd>
+<dt>外贸例子</dt><dd>公司介绍、文章、产品说明；改内容后触发重新构建。</dd>
+<dt>选型要点</dt><dd>适合可提前生成的公开内容。更新不频繁是常见情况，但不代表内容永远不能变。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-14" data-search="ISR · 增量静态再生 复用已生成页面，再按时间或事件等规则使其重新生成；通常不必重建整个网站。具体语义取决于框架与部署。 产品册先备好，改了某款产品就换那几页。 上万产品页面：改一个产品后，触发相关页面更新。 适合允许一定内容延迟的公开页面。时间到不一定等于后台定时自动执行；可能要等后续访问触发，访客也可能暂时看到旧版。"><summary><span class="point-no">14</span>ISR · 增量静态再生</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>复用已生成页面，再按时间或事件等规则使其重新生成；通常不必重建整个网站。具体语义取决于框架与部署。</dd>
+<dt>打个比方</dt><dd>产品册先备好，改了某款产品就换那几页。</dd>
+<dt>外贸例子</dt><dd>上万产品页面：改一个产品后，触发相关页面更新。</dd>
+<dt>选型要点</dt><dd>适合允许一定内容延迟的公开页面。时间到不一定等于后台定时自动执行；可能要等后续访问触发，访客也可能暂时看到旧版。</dd>
+</dl>
+<a class="source" href="https://nextjs.org/docs/app/guides/incremental-static-regeneration" target="_blank" rel="noopener noreferrer">官方资料：Next.js ISR ↗</a>
+</div></details>
+</div></div>
+<div class="pair"><h4>访问过程中生成内容</h4><div class="pair-body">
+<details class="point" id="point-15" data-search="SSR · 服务端渲染 在服务端生成 HTML。与 SSG 对比时，通常指在请求时生成页面；能否复用结果，还取决于缓存规则。 客户来时，后台先准备好展板再端出来。 根据登录客户读取其专属报价，再返回页面。 适合依赖请求信息、需要服务端处理的内容。SSR 不自动保证实时；共享缓存也不能混用不同客户的私有数据。"><summary><span class="point-no">15</span>SSR · 服务端渲染</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>在服务端生成 HTML。与 SSG 对比时，通常指在请求时生成页面；能否复用结果，还取决于缓存规则。</dd>
+<dt>打个比方</dt><dd>客户来时，后台先准备好展板再端出来。</dd>
+<dt>外贸例子</dt><dd>根据登录客户读取其专属报价，再返回页面。</dd>
+<dt>选型要点</dt><dd>适合依赖请求信息、需要服务端处理的内容。SSR 不自动保证实时；共享缓存也不能混用不同客户的私有数据。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-16" data-search="CSR · 客户端渲染 浏览器运行 JavaScript，获取数据并生成或更新界面。它也可以接在服务器预生成的页面之后。 先摆好工作台，再在访客的浏览器里不断操作。 客户后台、在线选型器、筛选、聊天与订单状态。 适合交互与私人区域。公开核心内容若完全依赖 JavaScript，要检查抓取与渲染。Client Component 不等于页面只有 CSR；Hydration 是让已有 HTML 接上交互。"><summary><span class="point-no">16</span>CSR · 客户端渲染</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>浏览器运行 JavaScript，获取数据并生成或更新界面。它也可以接在服务器预生成的页面之后。</dd>
+<dt>打个比方</dt><dd>先摆好工作台，再在访客的浏览器里不断操作。</dd>
+<dt>外贸例子</dt><dd>客户后台、在线选型器、筛选、聊天与订单状态。</dd>
+<dt>选型要点</dt><dd>适合交互与私人区域。公开核心内容若完全依赖 JavaScript，要检查抓取与渲染。Client Component 不等于页面只有 CSR；Hydration 是让已有 HTML 接上交互。</dd>
+</dl>
+<a class="source" href="https://nextjs.org/docs/app/getting-started/server-and-client-components" target="_blank" rel="noopener noreferrer">官方资料：Next.js 服务端与客户端组件 ↗</a>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-5"><h3>05 · 部署与加速</h3>
+<div class="pair"><h4>让网站能访问</h4><div class="pair-body">
+<details class="point" id="point-17" data-search="域名 / DNS / HTTPS 域名是网址名称；DNS 把名称指向服务；HTTPS 加密浏览器与网站之间的传输。 域名是店名，DNS 是导航指路，HTTPS 是加密运输。 把 example.com 指向网站，并配置有效证书。 核对主域名、www 跳转、DNS 归属、续费和证书。域名不等于服务器；邮箱还需要自己的 DNS 配置。"><summary><span class="point-no">17</span>域名 / DNS / HTTPS</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>域名是网址名称；DNS 把名称指向服务；HTTPS 加密浏览器与网站之间的传输。</dd>
+<dt>打个比方</dt><dd>域名是店名，DNS 是导航指路，HTTPS 是加密运输。</dd>
+<dt>外贸例子</dt><dd>把 example.com 指向网站，并配置有效证书。</dd>
+<dt>选型要点</dt><dd>核对主域名、www 跳转、DNS 归属、续费和证书。域名不等于服务器；邮箱还需要自己的 DNS 配置。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-18" data-search="托管 / 服务器 / Serverless 托管提供网站的运行位置。可能是静态托管、托管应用平台、传统服务器，或按请求运行的函数。 选店铺落在哪里，以及谁负责水电和维修。 静态内容放静态托管；询盘由函数处理；WordPress 运行在合适的 PHP 与数据库环境。 框架需要什么运行能力，托管就必须支持什么。Serverless 仍有服务器，只是由平台管理；检查区域、超时、配额和数据存放位置。"><summary><span class="point-no">18</span>托管 / 服务器 / Serverless</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>托管提供网站的运行位置。可能是静态托管、托管应用平台、传统服务器，或按请求运行的函数。</dd>
+<dt>打个比方</dt><dd>选店铺落在哪里，以及谁负责水电和维修。</dd>
+<dt>外贸例子</dt><dd>静态内容放静态托管；询盘由函数处理；WordPress 运行在合适的 PHP 与数据库环境。</dd>
+<dt>选型要点</dt><dd>框架需要什么运行能力，托管就必须支持什么。Serverless 仍有服务器，只是由平台管理；检查区域、超时、配额和数据存放位置。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>让海外访问更快</h4><div class="pair-body">
+<details class="point" id="point-19" data-search="CDN / 缓存 / 更新失效 CDN 从靠近用户的节点交付可缓存内容；缓存保存可复用结果，失效规则决定何时获取新版。 把常用产品册放进各地分仓。 欧美买家从附近节点加载产品图；发布后清除相关页面缓存。 CDN 不是新的建站框架。分别确认页面、数据、浏览器缓存；登录与询盘等私有内容不能随意共享缓存。"><summary><span class="point-no">19</span>CDN / 缓存 / 更新失效</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>CDN 从靠近用户的节点交付可缓存内容；缓存保存可复用结果，失效规则决定何时获取新版。</dd>
+<dt>打个比方</dt><dd>把常用产品册放进各地分仓。</dd>
+<dt>外贸例子</dt><dd>欧美买家从附近节点加载产品图；发布后清除相关页面缓存。</dd>
+<dt>选型要点</dt><dd>CDN 不是新的建站框架。分别确认页面、数据、浏览器缓存；登录与询盘等私有内容不能随意共享缓存。</dd>
+</dl>
+<a class="source" href="https://developers.cloudflare.com/cache/" target="_blank" rel="noopener noreferrer">官方资料：Cloudflare CDN 与缓存 ↗</a>
+</div></details>
+<details class="point" id="point-20" data-search="图片 / 脚本 / 字体 / 体验性能 控制资源体积和加载顺序；Core Web Vitals 用 LCP、INP、CLS 观察主要内容显示、交互响应与布局稳定性。 减少运输货物，先把客户最需要的东西搬进来。 压缩大图、提供合适尺寸、延迟非首屏媒体，减少第三方聊天和统计脚本。 用目标国家和手机的真实体验验证。静态页面也可能被大图拖慢，SSR 也不能代替资源优化。"><summary><span class="point-no">20</span>图片 / 脚本 / 字体 / 体验性能</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>控制资源体积和加载顺序；Core Web Vitals 用 LCP、INP、CLS 观察主要内容显示、交互响应与布局稳定性。</dd>
+<dt>打个比方</dt><dd>减少运输货物，先把客户最需要的东西搬进来。</dd>
+<dt>外贸例子</dt><dd>压缩大图、提供合适尺寸、延迟非首屏媒体，减少第三方聊天和统计脚本。</dd>
+<dt>选型要点</dt><dd>用目标国家和手机的真实体验验证。静态页面也可能被大图拖慢，SSR 也不能代替资源优化。</dd>
+</dl>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-6"><h3>06 · SEO 与多语言</h3>
+<div class="pair"><h4>让搜索引擎理解网站</h4><div class="pair-body">
+<details class="point" id="point-21" data-search="抓取 / 索引 / URL 管理 抓取是搜索引擎读取页面，索引是把页面纳入可检索内容。robots.txt、noindex、状态码、Sitemap、canonical 各有不同作用。 让图书管理员找到书、判断收不收录，并认清哪本是主要版本。 产品链接可正常访问，重要页面有内链；移除产品有合适的跳转或状态码。 提交 Sitemap 不保证收录。robots.txt 不是访问权限；仅禁止抓取也不等于一定从搜索结果移除。筛选组合要防止生成无穷重复 URL。"><summary><span class="point-no">21</span>抓取 / 索引 / URL 管理</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>抓取是搜索引擎读取页面，索引是把页面纳入可检索内容。robots.txt、noindex、状态码、Sitemap、canonical 各有不同作用。</dd>
+<dt>打个比方</dt><dd>让图书管理员找到书、判断收不收录，并认清哪本是主要版本。</dd>
+<dt>外贸例子</dt><dd>产品链接可正常访问，重要页面有内链；移除产品有合适的跳转或状态码。</dd>
+<dt>选型要点</dt><dd>提交 Sitemap 不保证收录。robots.txt 不是访问权限；仅禁止抓取也不等于一定从搜索结果移除。筛选组合要防止生成无穷重复 URL。</dd>
+</dl>
+<a class="source" href="https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics" target="_blank" rel="noopener noreferrer">官方资料：Google JavaScript SEO ↗</a>
+</div></details>
+<details class="point" id="point-22" data-search="页面 SEO / 结构化数据 / 内容 页面标题、描述、标题层级、正文、内链和结构化数据帮助用户及搜索引擎理解内容。程序化 SEO 用模板与数据批量生成有实际价值的页面。 书名、目录、正文和分类标签要与内容相符。 产品页提供真实参数、应用案例和常见问题；类目页帮助采购比较。 架构支持 SEO，不保证排名。结构化数据应与可见内容一致；批量生成不等于每一页都值得收录。"><summary><span class="point-no">22</span>页面 SEO / 结构化数据 / 内容</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>页面标题、描述、标题层级、正文、内链和结构化数据帮助用户及搜索引擎理解内容。程序化 SEO 用模板与数据批量生成有实际价值的页面。</dd>
+<dt>打个比方</dt><dd>书名、目录、正文和分类标签要与内容相符。</dd>
+<dt>外贸例子</dt><dd>产品页提供真实参数、应用案例和常见问题；类目页帮助采购比较。</dd>
+<dt>选型要点</dt><dd>架构支持 SEO，不保证排名。结构化数据应与可见内容一致；批量生成不等于每一页都值得收录。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>让不同市场找到正确版本</h4><div class="pair-body">
+<details class="point" id="point-23" data-search="国际化 i18n / 翻译 / hreflang i18n 是让系统支持多语言与地区差异；本地化是做好具体语言内容；hreflang 标明对应的语言或地区版本。 给不同国家准备对应版本的产品册，再互相标注版本。 example.com/en/ 与 /de/ 有各自 URL，翻译正文、导航、单位和询盘提示。 仅装翻译按钮不等于完整多语言 SEO。检查独立 URL、互相关联、语言切换和翻译质量，避免只按 IP 自动切换内容。"><summary><span class="point-no">23</span>国际化 i18n / 翻译 / hreflang</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>i18n 是让系统支持多语言与地区差异；本地化是做好具体语言内容；hreflang 标明对应的语言或地区版本。</dd>
+<dt>打个比方</dt><dd>给不同国家准备对应版本的产品册，再互相标注版本。</dd>
+<dt>外贸例子</dt><dd>example.com/en/ 与 /de/ 有各自 URL，翻译正文、导航、单位和询盘提示。</dd>
+<dt>选型要点</dt><dd>仅装翻译按钮不等于完整多语言 SEO。检查独立 URL、互相关联、语言切换和翻译质量，避免只按 IP 自动切换内容。</dd>
+</dl>
+<a class="source" href="https://developers.google.com/search/docs/specialty/international/managing-multi-regional-sites" target="_blank" rel="noopener noreferrer">官方资料：Google 多语言网站指南 ↗</a>
+</div></details>
+<details class="point" id="point-24" data-search="单站 / 多站 / 站群治理 一个站可通过目录管理多个语言；也可用子域名或独立域名分开品牌、国家或业务。多站需要管理配置与内容复用。 选择同一家店分楼层，还是开多家分店。 同品牌用语言目录；独立品牌各有域名，共享产品资料但分别维护内容。 按品牌、市场、团队和权限选择；域名越多，内容、维护与数据分析工作越多。复制大量相似站点不自动带来更多流量。"><summary><span class="point-no">24</span>单站 / 多站 / 站群治理</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>一个站可通过目录管理多个语言；也可用子域名或独立域名分开品牌、国家或业务。多站需要管理配置与内容复用。</dd>
+<dt>打个比方</dt><dd>选择同一家店分楼层，还是开多家分店。</dd>
+<dt>外贸例子</dt><dd>同品牌用语言目录；独立品牌各有域名，共享产品资料但分别维护内容。</dd>
+<dt>选型要点</dt><dd>按品牌、市场、团队和权限选择；域名越多，内容、维护与数据分析工作越多。复制大量相似站点不自动带来更多流量。</dd>
+</dl>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-7"><h3>07 · 询盘与增长</h3>
+<div class="pair"><h4>接住并跟进需求</h4><div class="pair-body">
+<details class="point" id="point-25" data-search="RFQ 表单 / 邮箱 / 即时沟通 询盘入口收集足够报价的信息；邮件、WhatsApp 或在线聊天提供不同沟通渠道。服务端处理负责校验与提交。 前台把客户需求记完整，再可靠地交给销售。 提交产品型号、数量、国家与附件，网站确认已保存，通知销售。 不要只检查提交按钮变绿。核对询盘是否保存、通知是否到达、回复地址是否正确，避免漏单和重复提交。"><summary><span class="point-no">25</span>RFQ 表单 / 邮箱 / 即时沟通</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>询盘入口收集足够报价的信息；邮件、WhatsApp 或在线聊天提供不同沟通渠道。服务端处理负责校验与提交。</dd>
+<dt>打个比方</dt><dd>前台把客户需求记完整，再可靠地交给销售。</dd>
+<dt>外贸例子</dt><dd>提交产品型号、数量、国家与附件，网站确认已保存，通知销售。</dd>
+<dt>选型要点</dt><dd>不要只检查提交按钮变绿。核对询盘是否保存、通知是否到达、回复地址是否正确，避免漏单和重复提交。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-26" data-search="CRM / 线索分配 / 自动化 CRM 管客户与商机；自动化将询盘分配给销售、提醒跟进并记录状态。 把前台登记本接到销售团队的客户档案。 按国家分配询盘，销售标记有效、已报价、已成交。 先明确线索字段和负责人，再接系统。通知失败不应让已保存询盘丢失；同步要防重复。"><summary><span class="point-no">26</span>CRM / 线索分配 / 自动化</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>CRM 管客户与商机；自动化将询盘分配给销售、提醒跟进并记录状态。</dd>
+<dt>打个比方</dt><dd>把前台登记本接到销售团队的客户档案。</dd>
+<dt>外贸例子</dt><dd>按国家分配询盘，销售标记有效、已报价、已成交。</dd>
+<dt>选型要点</dt><dd>先明确线索字段和负责人，再接系统。通知失败不应让已保存询盘丢失；同步要防重复。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>看清流量是否带来生意</h4><div class="pair-body">
+<details class="point" id="point-27" data-search="分析工具 / 广告事件 / UTM 分析工具记录访问和事件；UTM 是链接上的来源标签；广告转化事件记录希望用户完成的动作。 给不同渠道发来的访客贴上来源标签。 记录广告访问后成功提交询盘，而不是只记录点击按钮。 区分按钮点击、提交成功、有效询盘与成交。统计可能受同意设置和拦截影响；不要把个人联系资料直接发进分析事件。"><summary><span class="point-no">27</span>分析工具 / 广告事件 / UTM</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>分析工具记录访问和事件；UTM 是链接上的来源标签；广告转化事件记录希望用户完成的动作。</dd>
+<dt>打个比方</dt><dd>给不同渠道发来的访客贴上来源标签。</dd>
+<dt>外贸例子</dt><dd>记录广告访问后成功提交询盘，而不是只记录点击按钮。</dd>
+<dt>选型要点</dt><dd>区分按钮点击、提交成功、有效询盘与成交。统计可能受同意设置和拦截影响；不要把个人联系资料直接发进分析事件。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-28" data-search="线索质量 / 归因 / 转化优化 归因尝试关联渠道与结果；转化优化改善资料、信任信息和联系流程，提高目标动作完成率。 不仅数进店人数，还要看谁问价、谁买单。 对比不同广告带来的有效买家比例，以及询盘到成交的情况。 访客数和表单数量不能单独代表业务价值。先统一有效线索口径，再讨论渠道回报与页面实验。"><summary><span class="point-no">28</span>线索质量 / 归因 / 转化优化</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>归因尝试关联渠道与结果；转化优化改善资料、信任信息和联系流程，提高目标动作完成率。</dd>
+<dt>打个比方</dt><dd>不仅数进店人数，还要看谁问价、谁买单。</dd>
+<dt>外贸例子</dt><dd>对比不同广告带来的有效买家比例，以及询盘到成交的情况。</dd>
+<dt>选型要点</dt><dd>访客数和表单数量不能单独代表业务价值。先统一有效线索口径，再讨论渠道回报与页面实验。</dd>
+</dl>
+</div></details>
+</div></div>
+</section>
+<section class="module" id="module-8"><h3>08 · 安全与维护</h3>
+<div class="pair"><h4>保护系统与客户数据</h4><div class="pair-body">
+<details class="point" id="point-29" data-search="认证 / 授权 / 密钥 / 隐私 认证确认你是谁，授权确认你能做什么；密钥用于系统访问；隐私管理覆盖收集目的、保存期限和访问范围。 先查身份，再决定能进哪间办公室。 销售可看负责的客户，编辑可改产品，管理员管理账户；客户只看自己的报价。 后台和 API 都要检查权限，不能只隐藏按钮。密钥不放公开前端；跟踪和数据收集按目标市场与实际工具核对要求。"><summary><span class="point-no">29</span>认证 / 授权 / 密钥 / 隐私</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>认证确认你是谁，授权确认你能做什么；密钥用于系统访问；隐私管理覆盖收集目的、保存期限和访问范围。</dd>
+<dt>打个比方</dt><dd>先查身份，再决定能进哪间办公室。</dd>
+<dt>外贸例子</dt><dd>销售可看负责的客户，编辑可改产品，管理员管理账户；客户只看自己的报价。</dd>
+<dt>选型要点</dt><dd>后台和 API 都要检查权限，不能只隐藏按钮。密钥不放公开前端；跟踪和数据收集按目标市场与实际工具核对要求。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-30" data-search="防垃圾 / 输入校验 / 应用安全 在服务端检查输入、附件和请求频率，防止垃圾询盘与恶意操作；WAF、验证码、限流可作为保护手段。 前台登记要核验内容，保安限制异常闯入。 拒绝异常附件，限制短时间大量提交，修复有漏洞的依赖或插件。 浏览器里的必填检查不能代替服务端校验；验证码与 WAF 也不能代替正确的权限和程序设计。"><summary><span class="point-no">30</span>防垃圾 / 输入校验 / 应用安全</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>在服务端检查输入、附件和请求频率，防止垃圾询盘与恶意操作；WAF、验证码、限流可作为保护手段。</dd>
+<dt>打个比方</dt><dd>前台登记要核验内容，保安限制异常闯入。</dd>
+<dt>外贸例子</dt><dd>拒绝异常附件，限制短时间大量提交，修复有漏洞的依赖或插件。</dd>
+<dt>选型要点</dt><dd>浏览器里的必填检查不能代替服务端校验；验证码与 WAF 也不能代替正确的权限和程序设计。</dd>
+</dl>
+</div></details>
+</div></div>
+<div class="pair"><h4>保持可交付与可恢复</h4><div class="pair-body">
+<details class="point" id="point-31" data-search="Git / 测试环境 / CI/CD / 回滚 Git 记录代码版本；测试环境先验证；CI/CD 自动检查与发布；回滚恢复已知正常版本。 装修先看样板间，出问题能切回旧方案。 上线前验证产品、语言、手机和询盘；发布后冒烟检查。 代码、数据库、配置和媒体可能分别变更。回滚代码不一定撤销数据变化；提前准备可执行的恢复办法。"><summary><span class="point-no">31</span>Git / 测试环境 / CI/CD / 回滚</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>Git 记录代码版本；测试环境先验证；CI/CD 自动检查与发布；回滚恢复已知正常版本。</dd>
+<dt>打个比方</dt><dd>装修先看样板间，出问题能切回旧方案。</dd>
+<dt>外贸例子</dt><dd>上线前验证产品、语言、手机和询盘；发布后冒烟检查。</dd>
+<dt>选型要点</dt><dd>代码、数据库、配置和媒体可能分别变更。回滚代码不一定撤销数据变化；提前准备可执行的恢复办法。</dd>
+</dl>
+</div></details>
+<details class="point" id="point-32" data-search="备份 / 监控 / 所有权 / 总成本 备份保存可恢复数据；监控发现故障；所有权保证账号、域名、源码和数据可交接；总成本包括建设与持续运营。 留钥匙、备份账本、装报警器，并把每月开销算清楚。 定期备份并尝试恢复，监控网站与询盘链路，登记域名和服务续费负责人。 比较主机、插件、翻译、外部 API、开发维护和迁移成本。备份成功不代表恢复成功；客户应能接管关键资产。"><summary><span class="point-no">32</span>备份 / 监控 / 所有权 / 总成本</summary><div class="point-body"><dl>
+<dt>是什么</dt><dd>备份保存可恢复数据；监控发现故障；所有权保证账号、域名、源码和数据可交接；总成本包括建设与持续运营。</dd>
+<dt>打个比方</dt><dd>留钥匙、备份账本、装报警器，并把每月开销算清楚。</dd>
+<dt>外贸例子</dt><dd>定期备份并尝试恢复，监控网站与询盘链路，登记域名和服务续费负责人。</dd>
+<dt>选型要点</dt><dd>比较主机、插件、翻译、外部 API、开发维护和迁移成本。备份成功不代表恢复成功；客户应能接管关键资产。</dd>
+</dl>
+</div></details>
+</div></div>
+</section></section></main>
+<footer><div class="wrap">这张图帮助理解与讨论方案，不保证排名、询盘或特定技术效果。具体插件、价格、部署支持与服务规则，请在使用时核对当前官方资料。<br><a href="https://github.com/Miraclemin/b2b-website-strategy">b2b-website-strategy</a> · 免费获取与使用说明 · 本文件可离线打开</div></footer>
+<script>
+(()=>{const canvas=document.getElementById('canvas'),svg=canvas.querySelector('svg'),output=document.getElementById('zoom-label');svg.querySelectorAll('g[data-target]').forEach(g=>{const a=document.createElementNS('http://www.w3.org/2000/svg','a');a.setAttribute('href',g.dataset.target);g.parentNode.insertBefore(a,g);a.append(g)});let zoom=1;function scale(v){zoom=Math.max(.18,Math.min(1.6,v));svg.style.width=(1900*zoom)+'px';output.value=Math.round(zoom*100)+'%'}function fit(){scale(canvas.clientWidth/1900)}document.getElementById('zoom-out').onclick=()=>scale(zoom-.15);document.getElementById('zoom-in').onclick=()=>scale(zoom+.15);document.getElementById('actual').onclick=()=>scale(1);document.getElementById('fit').onclick=fit;fit();
+const search=document.getElementById('search'),points=[...document.querySelectorAll('.point')],modules=[...document.querySelectorAll('.module')];function filter(){const q=search.value.trim().toLocaleLowerCase();let n=0;points.forEach(p=>{p.hidden=q&&!p.dataset.search.toLocaleLowerCase().includes(q);if(!p.hidden){n++;if(q)p.open=true}});document.querySelectorAll('.pair').forEach(p=>p.hidden=![...p.querySelectorAll('.point')].some(x=>!x.hidden));modules.forEach(m=>m.hidden=![...m.querySelectorAll('.point')].some(p=>!p.hidden));document.getElementById('match-count').value=n+' / 32 组';document.getElementById('empty').style.display=n?'none':'block'}search.addEventListener('input',filter);document.getElementById('expand').onclick=()=>points.forEach(p=>{if(!p.hidden)p.open=true});document.getElementById('collapse').onclick=()=>points.forEach(p=>p.open=false);document.getElementById('print').onclick=()=>window.print();let beforePrint=[];window.addEventListener('beforeprint',()=>{beforePrint=points.map(p=>p.open);points.forEach(p=>{if(!p.hidden)p.open=true})});window.addEventListener('afterprint',()=>points.forEach((p,i)=>p.open=beforePrint[i]));
+function reveal(hash){if(!/^#(?:point-\d\d|module-\d+)$/.test(hash))return;search.value='';filter();const target=document.querySelector(hash);if(target){if(target.matches('details'))target.open=true;requestAnimationFrame(()=>target.scrollIntoView({behavior:'smooth',block:'start'}))}}canvas.addEventListener('click',event=>{const a=event.target.closest('a');if(a){const hash=a.getAttribute('href');if(hash&&hash.startsWith('#')){event.preventDefault();history.replaceState(null,'',hash);reveal(hash)}}});window.addEventListener('hashchange',()=>reveal(location.hash));reveal(location.hash);
+})();
+</script></body></html>
