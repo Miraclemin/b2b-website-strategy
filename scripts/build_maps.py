@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import html
 import json
-import textwrap
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -126,7 +125,6 @@ def overview(modules):
             y = 239 + i*102
             parts += [f'<path d="M{x+20} {y+18} H{x+45}" stroke="{color}" stroke-width="2"/>',
                       label(x+56, y+26, module["name"], 26, weight=600)]
-            leaves = [leaf for group in module["children"] for leaf in group["children"]]
             # Short, readable clues; the full map contains exact titles and the HTML carries explanations.
             clues = ["目标 / 平台 / 开发路线", "产品模型 / 编辑 / 系统集成", "页面结构 / 交互 / 开发框架", "SSG / ISR / SSR / CSR", "源站 / CDN / 性能", "索引 / 内容 / 语言 / 站点", "表单 / 邮件 / CRM / 归因", "权限 / 发布 / 备份 / 总成本"]
             parts.append(label(x+56, y+62, clues[side*4+i], 22, MUTED))
@@ -222,7 +220,7 @@ def markdown(tree, modules):
 
 
 def main():
-    data = json.loads((ASSETS / 'knowledge-tree.json').read_text())
+    data = json.loads((ASSETS / 'knowledge-tree.json').read_text(encoding='utf-8'))
     tree = data['tree']
     modules, leaves = [], []
     def verify(node, depth=0):
@@ -240,12 +238,12 @@ def main():
     DOCS.mkdir(exist_ok=True)
     (ASSETS / 'readme').mkdir(exist_ok=True)
     svg = full_map(tree)
-    (ASSETS / 'technology-map.svg').write_text(svg)
-    (ASSETS / 'readme' / 'overview.svg').write_text(overview(modules))
-    (ASSETS / 'readme' / 'hero.svg').write_text(hero())
-    (DOCS / 'technology-map.html').write_text(web_page(modules, svg))
-    (DOCS / 'technology-map.md').write_text(markdown(tree, modules))
-    (DOCS / 'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=technology-map.html"><title>外贸网站技术选型图</title><a href="technology-map.html">打开外贸网站技术选型图</a></html>\n')
+    (ASSETS / 'technology-map.svg').write_text(svg, encoding='utf-8')
+    (ASSETS / 'readme' / 'overview.svg').write_text(overview(modules), encoding='utf-8')
+    (ASSETS / 'readme' / 'hero.svg').write_text(hero(), encoding='utf-8')
+    (DOCS / 'technology-map.html').write_text(web_page(modules, svg), encoding='utf-8')
+    (DOCS / 'technology-map.md').write_text(markdown(tree, modules), encoding='utf-8')
+    (DOCS / 'index.html').write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="refresh" content="0;url=technology-map.html"><title>外贸网站技术选型图</title><a href="technology-map.html">打开外贸网站技术选型图</a></html>\n', encoding='utf-8')
     print('Built: 8 modules / 32 knowledge groups / 63 binary-tree nodes')
 
 
