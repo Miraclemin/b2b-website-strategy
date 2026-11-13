@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="外贸网站技术选型与诊断 Skill：8 个选型层面、32 组知识点，支持已有站诊断与新站访谈">
+  <img src="./assets/readme/hero.svg" width="100%" alt="外贸网站技术选型与诊断 Skill：8 大模块、32 组知识点，支持已有站诊断与新站访谈">
 </p>
 
 <p align="center">
@@ -19,10 +19,10 @@
 这是可复用的工作流程与参考资料，不是上传网址就自动完成扫描的在线平台。实际研究由运行它的 AI 助手及其工具完成；工具缺失或访问受限时，报告必须说明哪些内容没有验证。
 
 <p align="center">
-  <a href="./assets/technology-map.svg"><img src="./assets/readme/overview.svg" width="100%" alt="外贸网站八层选型总览：业务路线、内容数据、前端交互、渲染缓存、部署性能、SEO 多语言、询盘归因、安全维护"></a>
+  <a href="./assets/technology-map.svg"><img src="./assets/readme/overview.svg" width="100%" alt="外贸网站8大模块思维导图：业务路线、内容数据、前端交互、渲染缓存、部署性能、SEO 多语言、询盘归因、安全维护"></a>
 </p>
 
-**先看实际输出形状：**[酒店家具工厂新站完整教学案例](./references/example-furniture.md)包含七组客户回答、八层方案、配套服务、具体 CDN 规则、SEO 页面结构和验收步骤。案例数据为教学模拟，未做实际市场调研或部署。
+**先看实际输出形状：**[酒店家具工厂新站完整教学案例](./references/example-furniture.md)包含七组客户回答、八大模块方案、配套服务、具体 CDN 规则、SEO 页面结构和验收步骤。案例数据为教学模拟，未做实际市场调研或部署。
 
 ## 快速开始
 
@@ -78,7 +78,7 @@ git clone https://github.com/Miraclemin/b2b-website-strategy.git `
 
 请实际打开本站和候选竞品的代表页面，给我：
 1. 最值得优先处理的三件事及页面证据；
-2. 八层技术现状，以及保留、局部改造、迁移的比较；
+2. 八大模块技术现状，以及保留、局部改造、迁移的比较；
 3. 竞品功能与工具线索差距表，区分观察、推测与待核实；
 4. 插件、企业邮箱、网站发信、客服和 SEO 方案；
 5. 明确的 CDN 选择、接入、缓存与绕过规则、更新和验收方法。
@@ -108,7 +108,7 @@ git clone https://github.com/Miraclemin/b2b-website-strategy.git `
 
 | 你的情况 | 助手先做什么 | 交付重点 |
 | --- | --- | --- |
-| 有网站，想诊断或改版 | 实际查看代表页、必要交互与手机视图；寻找相关竞品 | 页面证据、八层现状、功能/工具线索差距、改进顺序、保留或迁移判断 |
+| 有网站，想诊断或改版 | 实际查看代表页、必要交互与手机视图；寻找相关竞品 | 页面证据、八大模块现状、功能/工具线索差距、改进顺序、保留或迁移判断 |
 | 没网站，从零规划 | 每轮最多三个问题，通常覆盖七组业务条件 | 一个主方案、一个备选、页面与内容模型、SEO、配套服务、CDN 和验收 |
 
 新站主要问：卖什么与卖给谁、市场与语言、怎样成交、内容与编辑者、是否有旧站、预算与维护条件、必须满足的限制。已经知道的答案不重复问；信息够用就先给方向。
@@ -116,7 +116,7 @@ git clone https://github.com/Miraclemin/b2b-website-strategy.git `
 ### 能拿到哪些内容
 
 1. **结论与优先级**：先告诉你最值得做的事，再展示证据。
-2. **技术选择与备选**：每层写清选什么、为什么、业务例子和维护代价。
+2. **技术选择与备选**：每个模块写清选什么、为什么、业务例子和维护代价。
 3. **竞品差距**：比较采购任务和可见功能；有脚本线索才说明工具可能是什么。
 4. **插件与服务**：表单保存、SMTP/API 发信、企业收件箱、Tidio 等客服、SEO、多语言、备份、分析。
 5. **CDN 配置**：具体供应商与接入域名、DNS/代理和 TLS、路径/方法/参数/Cookie 条件、边缘/浏览器 TTL、缓存键、规则顺序、发布失效、回退与验收。
@@ -125,24 +125,24 @@ git clone https://github.com/Miraclemin/b2b-website-strategy.git `
 
 这些是规划与研究交付，不代表已经安装插件、改好 DNS、投递邮件或完成部署。
 
-## 知识图：8 个层面，32 组知识点
+## 思维导图：8 大模块，32 组知识点
 
-“8 层”指八个业务选型层面。配套图按二叉方式组织为 **63 个节点、32 个末端知识点组**，每个非叶节点恰有两个子节点；从根到叶是五次分叉。它是一张分类学习图，多个分支可以组合使用。
+以“外贸网站技术选型”为中心，直接展开 **8 大模块，每个模块 4 组知识点，共 32 组**。先看全貌，再按相关模块学习；同一项目可组合使用不同模块中的技术和服务。每个知识点保留解释、类比、外贸例子与选型要点。
 
-| 层面 | 四组核心知识点 |
+| 模块 | 四组核心知识点 |
 | --- | --- |
 | 01 业务与建站路线 | RFQ 询盘；B2B 交易；CMS/SaaS；框架与一体/Headless 架构 |
 | 02 内容与数据 | 内容模型；CMS 编辑发布；数据库/文件/搜索；API/Webhook/集成 |
 | 03 前端与交互 | HTML/CSS/JS；响应式与可访问性；组件与样式工具；网站框架 |
-| 04 页面渲染与更新 | SSG；ISR；SSR；CSR |
+| 04 渲染与更新 | SSG；ISR；SSR；CSR |
 | 05 部署与性能 | 域名/DNS/HTTPS；托管/服务器；CDN/缓存失效；图片脚本与体验性能 |
 | 06 SEO 与多语言 | 抓取索引/URL；页面 SEO/内容；国际化/hreflang；单站/多站 |
-| 07 询盘与衡量 | RFQ/邮箱/沟通；CRM/分配；分析事件/UTM；有效线索/归因/优化 |
+| 07 询盘与归因 | RFQ/邮箱/沟通；CRM/分配；分析事件/UTM；有效线索/归因/优化 |
 | 08 安全与维护 | 认证授权/密钥隐私；校验防垃圾；Git/测试发布回滚；备份监控/所有权/总成本 |
 
 - [在线交互知识图](https://miraclemin.github.io/b2b-website-strategy/)：缩放、搜索、展开解释、打印；下载后可离线打开。
-- [完整 SVG 二叉树](./assets/technology-map.svg)：可缩放、适合继续编辑。
-- [高清 PNG 二叉树](./assets/technology-map.png)：便于保存和分享。
+- [完整 SVG 思维导图](./assets/technology-map.svg)：可缩放、适合继续编辑。
+- [高清 PNG 思维导图](./assets/technology-map.png)：便于保存和分享。
 - [Markdown 详解与 Mermaid 源图](./docs/technology-map.md)：每点含解释、类比、外贸例子与选型要点。
 - [交互 HTML 文件](./docs/technology-map.html)：GitHub 文件页显示源码；下载后在浏览器打开。
 
@@ -181,7 +181,7 @@ b2b-website-strategy/
 ├── agents/openai.yaml               Codex 展示与默认提示
 ├── references/
 │   ├── site-audit.md                现有网站与竞品诊断
-│   ├── selection-guide.md           八层选型判断
+│   ├── selection-guide.md           八大模块选型判断
 │   ├── services-and-configuration.md 插件、邮箱、客服
 │   ├── cdn-plan.md                  CDN 接入与缓存规则
 │   ├── seo-playbook.md              SEO 与证据规范
@@ -190,8 +190,8 @@ b2b-website-strategy/
 │   ├── technology-map.html         可离线交互知识图
 │   └── technology-map.md           32 组知识点与 Mermaid
 ├── assets/
-│   ├── knowledge-tree.json         知识图可编辑数据源
-│   ├── technology-map.svg          完整二叉树
+│   ├── knowledge-tree.json         思维导图可编辑数据源
+│   ├── technology-map.svg          完整思维导图
 │   └── technology-map.png          高清图片
 └── scripts/build_maps.py           用标准库生成图与解释
 ```

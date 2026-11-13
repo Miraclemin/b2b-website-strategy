@@ -1,38 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
-<title id="title">外贸网站技术选型 · 八层总览</title><desc id="desc">建设方案与运行获客二分，覆盖八个选型模块。完整 32 组知识点见知识树。</desc>
-<rect width="1200" height="700" fill="#f5f7f3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">外贸网站技术选型 · 8 大模块总览</title><desc id="desc">围绕外贸网站技术选型，八个模块直接展开，每个模块四组知识点。</desc>
+<rect width="1200" height="720" fill="#f5f7f3"/>
 <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif" fill="#183139">
 <text x="56" y="67" font-size="43" fill="#183139" font-weight="700">外贸网站技术选型</text>
-<text x="56" y="108" font-size="24" fill="#546c73" font-weight="400">用业务需求选技术，把网站接到询盘与运营。</text>
-<path d="M76 203 V596" stroke="#176d64" stroke-width="2" fill="none"/>
-<rect x="56" y="150" width="520" height="54" rx="8" fill="#176d64"/>
-<text x="76" y="186" font-size="26" fill="#ffffff" font-weight="600">A  网站怎么建</text>
-<path d="M76 257 H101" stroke="#176d64" stroke-width="2"/>
-<text x="112" y="265" font-size="26" fill="#183139" font-weight="600">01 · 业务目标与建站路线</text>
-<text x="112" y="301" font-size="22" fill="#546c73" font-weight="400">目标 / 平台 / 开发路线</text>
-<path d="M76 359 H101" stroke="#176d64" stroke-width="2"/>
-<text x="112" y="367" font-size="26" fill="#183139" font-weight="600">02 · 内容与数据</text>
-<text x="112" y="403" font-size="22" fill="#546c73" font-weight="400">产品模型 / 编辑 / 系统集成</text>
-<path d="M76 461 H101" stroke="#176d64" stroke-width="2"/>
-<text x="112" y="469" font-size="26" fill="#183139" font-weight="600">03 · 前端与交互</text>
-<text x="112" y="505" font-size="22" fill="#546c73" font-weight="400">页面结构 / 交互 / 开发框架</text>
-<path d="M76 563 H101" stroke="#176d64" stroke-width="2"/>
-<text x="112" y="571" font-size="26" fill="#183139" font-weight="600">04 · 页面渲染方式</text>
-<text x="112" y="607" font-size="22" fill="#546c73" font-weight="400">SSG / ISR / SSR / CSR</text>
-<path d="M644 203 V596" stroke="#375f96" stroke-width="2" fill="none"/>
-<rect x="624" y="150" width="520" height="54" rx="8" fill="#375f96"/>
-<text x="644" y="186" font-size="26" fill="#ffffff" font-weight="600">B  网站怎么运行与获客</text>
-<path d="M644 257 H669" stroke="#375f96" stroke-width="2"/>
-<text x="680" y="265" font-size="26" fill="#183139" font-weight="600">05 · 部署与加速</text>
-<text x="680" y="301" font-size="22" fill="#546c73" font-weight="400">源站 / CDN / 性能</text>
-<path d="M644 359 H669" stroke="#375f96" stroke-width="2"/>
-<text x="680" y="367" font-size="26" fill="#183139" font-weight="600">06 · SEO 与多语言</text>
-<text x="680" y="403" font-size="22" fill="#546c73" font-weight="400">索引 / 内容 / 语言 / 站点</text>
-<path d="M644 461 H669" stroke="#375f96" stroke-width="2"/>
-<text x="680" y="469" font-size="26" fill="#183139" font-weight="600">07 · 询盘与增长</text>
-<text x="680" y="505" font-size="22" fill="#546c73" font-weight="400">表单 / 邮件 / CRM / 归因</text>
-<path d="M644 563 H669" stroke="#375f96" stroke-width="2"/>
-<text x="680" y="571" font-size="26" fill="#183139" font-weight="600">08 · 安全与维护</text>
-<text x="680" y="607" font-size="22" fill="#546c73" font-weight="400">权限 / 发布 / 备份 / 总成本</text>
-<text x="56" y="661" font-size="23" fill="#176d64" font-weight="400">8 个选型层面 × 每层 4 组知识点 = 32 组  ·  完整二叉树与逐点解释另附</text>
+<text x="56" y="108" font-size="24" fill="#546c73" font-weight="400">中心主题 → 8 大模块 → 每个模块 4 组知识点</text>
+<path d="M460 402 C430.0 402,430.0 230,400 230" fill="none" stroke="#176d64" stroke-width="2" opacity=".55"/>
+<rect x="50" y="191" width="350" height="78" rx="9" fill="#ffffff" stroke="#176d64"/>
+<text x="68" y="238" font-size="25" fill="#176d64" font-weight="600">01  业务与建站路线</text>
+<path d="M460 402 C430.0 402,430.0 345,400 345" fill="none" stroke="#176d64" stroke-width="2" opacity=".55"/>
+<rect x="50" y="306" width="350" height="78" rx="9" fill="#ffffff" stroke="#176d64"/>
+<text x="68" y="353" font-size="25" fill="#176d64" font-weight="600">02  内容与数据</text>
+<path d="M460 402 C430.0 402,430.0 460,400 460" fill="none" stroke="#176d64" stroke-width="2" opacity=".55"/>
+<rect x="50" y="421" width="350" height="78" rx="9" fill="#ffffff" stroke="#176d64"/>
+<text x="68" y="468" font-size="25" fill="#176d64" font-weight="600">03  前端与交互</text>
+<path d="M460 402 C430.0 402,430.0 575,400 575" fill="none" stroke="#176d64" stroke-width="2" opacity=".55"/>
+<rect x="50" y="536" width="350" height="78" rx="9" fill="#ffffff" stroke="#176d64"/>
+<text x="68" y="583" font-size="25" fill="#176d64" font-weight="600">04  渲染与更新</text>
+<path d="M740 402 C780.0 402,780.0 230,820 230" fill="none" stroke="#375f96" stroke-width="2" opacity=".55"/>
+<rect x="820" y="191" width="350" height="78" rx="9" fill="#ffffff" stroke="#375f96"/>
+<text x="838" y="238" font-size="25" fill="#375f96" font-weight="600">05  部署与性能</text>
+<path d="M740 402 C780.0 402,780.0 345,820 345" fill="none" stroke="#375f96" stroke-width="2" opacity=".55"/>
+<rect x="820" y="306" width="350" height="78" rx="9" fill="#ffffff" stroke="#375f96"/>
+<text x="838" y="353" font-size="25" fill="#375f96" font-weight="600">06  SEO 与多语言</text>
+<path d="M740 402 C780.0 402,780.0 460,820 460" fill="none" stroke="#375f96" stroke-width="2" opacity=".55"/>
+<rect x="820" y="421" width="350" height="78" rx="9" fill="#ffffff" stroke="#375f96"/>
+<text x="838" y="468" font-size="25" fill="#375f96" font-weight="600">07  询盘与归因</text>
+<path d="M740 402 C780.0 402,780.0 575,820 575" fill="none" stroke="#375f96" stroke-width="2" opacity=".55"/>
+<rect x="820" y="536" width="350" height="78" rx="9" fill="#ffffff" stroke="#375f96"/>
+<text x="838" y="583" font-size="25" fill="#375f96" font-weight="600">08  安全与维护</text>
+<rect x="460" y="347" width="280" height="110" rx="13" fill="#183139"/>
+<text x="491" y="393" font-size="33" fill="#ffffff" font-weight="700">外贸网站</text>
+<text x="491" y="434" font-size="33" fill="#ffffff" font-weight="700">技术选型</text>
+<text x="56" y="683" font-size="24" fill="#176d64" font-weight="400">8 大模块 × 每个模块 4 组知识点 = 32 组  ·  按业务组合使用</text>
 </g></svg>
